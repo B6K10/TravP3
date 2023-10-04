@@ -3,7 +3,7 @@ package example.myapp
 class Aquarium(var width: Int = 20, var height: Int = 40, var length: Int =100) {
     var volume: Int
         get() = width * height * length / 1000
-        set(value) {
+        private set(value) {
             height = (value * 1000) / (width * length)
         }  // 1000 cm^3 pour 1 litre
     constructor(numberOfFish: Int) : this() {
