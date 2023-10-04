@@ -1,5 +1,5 @@
 package example.myapp
-
+//import java.lang.Math.PI
 fun buildAquarium() {
     // création de l'aquarium1 avec les valeurs (dimension) par défaut
     val aquarium1 = Aquarium()
@@ -18,6 +18,12 @@ fun buildAquarium() {
     aquarium5.printSize()
     aquarium5.volume = 70
     aquarium5.printSize()
+    // code pour créer un Aquarium avec width = 25, length = 25et height = 40
+    val aquarium6 = Aquarium(length = 25, width = 25, height = 40)
+    aquarium6.printSize()
+    //création un TowerTankd'un diamètre de 25 cm et d'une hauteur de 45 cm.
+    val myTower = TowerTank(diameter = 25, height = 40)
+    myTower.printSize()
 
 }
 
